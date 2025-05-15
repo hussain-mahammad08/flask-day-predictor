@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Day Predictor</title>
+</head>
+<body>
+    <h1>Enter the starting letter of your name</h1>
+    <form method="post">
+        <input type="text" name="letter" maxlength="1" required />
+        <button type="submit">Predict My Day</button>
+    </form>
+
+    {% if prediction %}
+        <p><strong>Prediction:</strong> {{ prediction }}</p>
+    {% endif %}
+</body>
+</html>
